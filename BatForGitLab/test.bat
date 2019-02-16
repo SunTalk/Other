@@ -10,6 +10,9 @@ if %one% leq %two% (
 
 :oo
 if %one% leq %three% (
+	echo.
+	echo doing one
+	echo.
 	one.bat %one%
 	goto end
 )
@@ -21,12 +24,18 @@ if %two% leq %one% (
 
 :to
 if %two% leq %three% (
+	echo.
+	echo doing two
+	echo.
 	two.bat %two%
 	goto end
 )
 
 :tx
 if %three% leq %one% (
+	echo.
+	echo doing two
+	echo.
 	three.bat %three%
 	goto end
 )
